@@ -23,6 +23,7 @@
       "32": "img/icon32.png",
       "48": "img/icon48.png"
    },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1yroJKFsgd2AWlD3iswuOHKqbWYbvtQ9TZcaKTSIslFFQT4f0tQ9LzXHge+3+f06wj/f3bq7hZ0bqPQr0OgmUGb/fU0lyCJdxx4ofzeXvq8DEOp2RyJN7XthyG0zOFfL+VM87QMCdouMjuB2HdCZeITUhub8136kV8n1wytZ138hCb8iX3ThC7OcYChJUeymGhPjrbCKPSRsAXz7Ckt9gBH7ehiLEjNDDEsPjzbbrBxw8lbE1WzSc+NNHsEl81FxbZenDZc0rG/mdSj5Qw+I+qpVag6mjS+epAM9HAZ4SYf4VWExZ//jRHPvkzYHeeX/3mH1lK8UEwTlnqYsUlAHowIDAQAB",
    "manifest_version": 2,
    "minimum_chrome_version": "20",
    "name": "Smooth Gestures Plus",
@@ -35,5 +36,5 @@
    "permissions": [ "tabs", "storage", "notifications", "idle", "unlimitedStorage", "\u003Call_urls>" ],
    "short_name": "Smooth Gestures Plus",
    "update_url": "https://raw.githubusercontent.com/tofuliang/SmoothGesturesPlus/master/updates.xml",
-   "version": "99.2.8.2"
+   "version": "99.2.8.7"
 }
