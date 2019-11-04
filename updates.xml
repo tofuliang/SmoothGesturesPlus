@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <gupdate xmlns='http://www.google.com/update2/response' protocol='2.0'>
   <app appid='mfpidjeogohllkpadkngkogjnpalnhfh'>
-    <updatecheck codebase='https://raw.githubusercontent.com/tofuliang/SmoothGesturesPlus/master/chrome.crx' version='99.2.8.8' />
+    <updatecheck codebase='https://raw.githubusercontent.com/tofuliang/SmoothGesturesPlus/master/chrome.crx' version='99.2.8.9' />
   </app>
 </gupdate>

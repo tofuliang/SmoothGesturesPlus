@@ -851,10 +851,6 @@
                 }), chrome.pageAction.setTitle({tabId: e, title: "Smooth Gestures"}), chrome.pageAction.show(e))
             })
         }, V = function () {
-            chrome.runtime.requestUpdateCheck(function () {
-            }), setTimeout(function () {
-                window.open("/update.html", "sgupdate", "chrome,innerWidth=700,innerHeight=250,left=" + (window.screen.width - 700) / 2 + ",top=" + ((window.screen.height - 250) / 2 - 100))
-            }, 2e3)
         }, B = function () {
             window.open("/buy.html", "sgbuy", "chrome,innerWidth=700,innerHeight=400,left=" + (window.screen.width - 700) / 2 + ",top=" + ((window.screen.height - 400) / 2 - 50))
         }, W = {};
@@ -878,8 +874,8 @@
                 i ? ("string" == typeof i && (i = JSON.parse(i)), i.alert && alert(i.alert), i.notif && new Notification(i.notif.title, {
                     icon: "/img/icon128.png",
                     body: i.notif.descrip
-                }), i.checkupdate && chrome.runtime.requestUpdateCheck(function () {
-                }), (w = !1), i.invalidtoken && n.token && (n.invalidtoken = n.token, chrome.storage.sync.set({invalidtoken: n.invalidtoken}), delete n.token, chrome.storage.sync.remove("token")), i.settoken && (n.token = i.settoken, chrome.storage.sync.set({token: n.token})), console.log("LIC_PINGED", i), b = -1 != ["full", "1yrmul", "6mnmul", "1mnmul", "2wkmul", "1wkmul", "1yr1cl", "1mn1cl", "1wk1cl"].indexOf(i.licenseid) ? i.licenseid : null, o({
+                })
+                , (w = !1), i.invalidtoken && n.token && (n.invalidtoken = n.token, chrome.storage.sync.set({invalidtoken: n.invalidtoken}), delete n.token, chrome.storage.sync.remove("token")), i.settoken && (n.token = i.settoken, chrome.storage.sync.set({token: n.token})), console.log("LIC_PINGED", i), b = -1 != ["full", "1yrmul", "6mnmul", "1mnmul", "2wkmul", "1wkmul", "1yr1cl", "1mn1cl", "1wk1cl"].indexOf(i.licenseid) ? i.licenseid : null, o({
                     license: b,
                     license_expires: i.expires
                 }), $.post("https://smoothgesturesplus.com/id?c=" + t.id + "&f=" + t.firstinstalled + "&l=" + (t.license || "")), e && e()) : setTimeout(P, 3e4)
